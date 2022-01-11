@@ -16,10 +16,14 @@
 
  // La aplicación inicia un servidor y escucha las conexiones en el puerto 3500.
  // arriba se define y acá se utiliza
- app.set('port',process.env.PORT || 3000);
- app.listen(app.get('port'), () => {
-   console.log('server on port',app.get('port'))
- })
+//  app.set('port',process.env.PORT || 3000);
+//  app.listen(app.get('port'), () => {
+//    console.log('server on port',app.get('port'))
+//  })
+let port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log(`App running on port ${port} `);
+})
 
  // Routes
  app.use('/api/category', categoryRoutes)
