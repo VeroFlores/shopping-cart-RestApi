@@ -14,7 +14,7 @@
 
  // La aplicación inicia un servidor y escucha las conexiones en el puerto 3500.
  // arriba se define y acá se utiliza
- app.set('port',process.env.PORT || 3500);
+ app.set('port',process.env.PORT || 3000);
  app.listen(app.get('port'), () => {
    console.log('server on port',app.get('port'))
  })
