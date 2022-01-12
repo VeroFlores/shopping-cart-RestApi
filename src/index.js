@@ -21,7 +21,6 @@
 //    console.log('server on port',app.get('port'))
 //  })
 let port = process.env.PORT || 3000
- console.log(port);
 app.listen(port, () => {
     console.log(`App running on port ${port} `);
 })
