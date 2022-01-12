@@ -7,7 +7,7 @@
 - Nodemon
 - Cors
 
- ## Enpoints
+ ## Endpoints
 
 Endpoints  | Method | Return 
 ------------- | ------------|-------------
@@ -30,4 +30,3 @@ This is the following issue that shows when try to deploy in netlify
 Error: connect ECONNREFUSED 127.0.0.1:3306
 ~~~
 
-Temporalmne
