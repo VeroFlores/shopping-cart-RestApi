@@ -20,9 +20,13 @@
 //  app.listen(app.get('port'), () => {
 //    console.log('server on port',app.get('port'))
 //  })
-let port = process.env.PORT || 3000
+const  port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log(`App running on port ${port} `);
+})
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
 })
 
  // Routes

@@ -1,7 +1,8 @@
 
-const { Router } = require('express');
+const  express = require('express');
+const  router = express.Router();
 const connection = require('../database');
-const router = Router();
+
 
    router.get('/', (request, response) => {
     connection.query("SELECT * FROM category",(err,result)=>{
