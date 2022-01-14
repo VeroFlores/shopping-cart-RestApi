@@ -1,6 +1,7 @@
  const express = require('express');
  const cors = require('cors');
  const dotenv =require('dotenv');
+ const connection = require ('./database');
  dotenv.config()
 
 
@@ -13,6 +14,11 @@
  app.use(cors());
 
  app.use(express.json());
+
+ connection.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
 
  // La aplicación inicia un servidor y escucha las conexiones en el puerto 3500.
  // arriba se define y acá se utiliza
